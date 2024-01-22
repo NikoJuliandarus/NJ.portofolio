@@ -46,4 +46,50 @@ table {
 /* css style */
 body {
   background-color: #eceaed;
+  font-family: poppins;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.navbar .navbar-logo {
+  font-size: 30px;
+}
+
+.navbar .navbar-logo a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.navbar .navbar-nav {
+  font-size: 20px;
+}
+
+.navbar .navbar-nav a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #1995ad;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  border-bottom: 2.5px solid #1995ad;
+  margin-bottom: 1px;
+  transition: 0.3s;
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.7);
 }
