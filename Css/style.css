@@ -44,9 +44,15 @@ table {
 
 
 /* css style */
+:root {
+  --bg: #c8c6d4;
+  --primary: #3b3a40;
+  --cr: #fccc99;
+}
+
 body {
-  background-color: #eceaed;
   font-family: poppins;
+  background-color: url(--bg);
 }
 
 .navbar {
