@@ -45,14 +45,14 @@ table {
 
 /* css style */
 :root {
-  --bg: #c8c6d4;
+  --bg: #c5bec7;
   --primary: #3b3a40;
   --cr: #fccc99;
 }
 
 body {
   font-family: poppins;
-  background-color: url(--bg);
+  background-color: var(--bg);
 }
 
 .navbar {
@@ -60,6 +60,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  background-color: var(--primary);
+  height: 50px;
 }
 
 .navbar .navbar-logo {
@@ -68,8 +70,12 @@ body {
 
 .navbar .navbar-logo a {
   text-decoration: none;
-  color: black;
+  color: var(--cr);
   display: inline-block;
+}
+
+.navbar .navbar-logo span {
+  font-style: italic;
 }
 
 .navbar .navbar-nav {
@@ -78,7 +84,7 @@ body {
 
 .navbar .navbar-nav a {
   text-decoration: none;
-  color: black;
+  color: var(--cr);
   margin: 10px;
   display: inline-block;
 }
