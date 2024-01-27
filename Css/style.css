@@ -45,9 +45,9 @@ table {
 
 /* css style */
 :root {
-  --bg: #c5bec7;
-  --primary: #3b3a40;
-  --cr: #fccc99;
+  --bg: #070b14;
+  --primary: #48dfe0;
+  --font: #fff;
 }
 
 body {
@@ -59,23 +59,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  background-color: var(--primary);
-  height: 50px;
-}
-
-.navbar .navbar-logo {
-  font-size: 30px;
+  padding: 15px;
 }
 
 .navbar .navbar-logo a {
+  color: var(--font);
   text-decoration: none;
-  color: var(--cr);
-  display: inline-block;
-}
-
-.navbar .navbar-logo span {
-  font-style: italic;
 }
 
 .navbar .navbar-nav {
@@ -84,24 +73,28 @@ body {
 
 .navbar .navbar-nav a {
   text-decoration: none;
-  color: var(--cr);
+  color: var(--font);
   margin: 10px;
   display: inline-block;
 }
 
 .navbar .navbar-nav a:hover {
-  color: #1995ad;
+  color: var(--primary);
 }
 
 .navbar .navbar-nav a::after {
   content: '';
   display: block;
-  border-bottom: 2.5px solid #1995ad;
-  margin-bottom: 1px;
-  transition: 0.3s;
+  border-bottom: 2.5px solid var(--primary);
+  padding-bottom: 2px;
+  transition: 1.2s;
   transform: scaleX(0);
 }
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.7);
+}
+
+.navbar .navbar-menu {
+  color: var(--font);
 }
