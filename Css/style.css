@@ -50,25 +50,33 @@ table {
   --font: #fff;
 }
 
+* {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
-  font-family: poppins;
-  background-color: var(--bg);
+  font-family: 'poppins', Sans-Serif;
+  height: 2000px;
 }
 
 .container-home {
-  background-color: red;
+  background-image: url(../img/GridArt_20240126_211738630.jpg);
+  background-size: cover;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 .navbar .navbar-logo a {
   color: var(--font);
-  text-decoration: none;
+  font-size: 25px;
 }
 
 .navbar .navbar-logo span {
@@ -106,4 +114,14 @@ body {
 
 .navbar .navbar-menu {
   color: var(--font);
+}
+
+.navbar .navbar-menu :hover {
+  color: var(--primary);
+}
+
+.content-home {
+  min-height: 100vh;
+  display: ;
+  align-items: center;
 }
