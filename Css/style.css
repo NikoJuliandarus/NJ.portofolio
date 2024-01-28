@@ -141,6 +141,24 @@ body {
   padding-left: 3px;
 }
 
+.content-icon {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+}
+
+.content-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--primary);
+}
+
 
 /* media queris */
 
