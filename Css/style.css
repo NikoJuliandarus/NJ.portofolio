@@ -203,6 +203,16 @@ body {
   margin: auto;
 }
 
+.con-portofolio {
+  display: flex;
+}
+
+.con-portofolio .por-img1,
+.por-img2, .por-img3{
+  width: 300px;
+  height: 400px;
+}
+
 
 
 
